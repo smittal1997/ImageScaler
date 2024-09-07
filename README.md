@@ -7,3 +7,7 @@ Change another one - public static String invalidTextFilePath = "C:\\Users\\Rano
 
 
 Run the testng.xml file
+
+Extent Report is generated for Pass/Fail of test cases.
+Screenshot will attach in Html Report for failed test cases.
+
