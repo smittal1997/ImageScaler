@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="scaler.CustomListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="scaler.uiValidations">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="TestCase5"/>
+        </methods>
+      </class> <!-- scaler.uiValidations -->
+      <class name="scaler.validFileUpload">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="TestCase2"/>
+        </methods>
+      </class> <!-- scaler.validFileUpload -->
+      <class name="scaler.ImgeUpScaling">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyImageUpsacling"/>
+        </methods>
+      </class> <!-- scaler.ImgeUpScaling -->
+      <class name="scaler.DownloadUpScaleImage">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="DownloadFile"/>
+          <include name="createAccount"/>
+        </methods>
+      </class> <!-- scaler.DownloadUpScaleImage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
